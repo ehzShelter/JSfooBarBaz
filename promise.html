@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title> Hi </title>
+  </head>
+  <body>
+    <div id="btn">
+      <p> This is single click </p>
+    </div>
+    <div id="btnD">
+      <p> This is for double click </p>
+    </div>
+
+    <script>
+      let button = document.getElementById("btn");
+      button.onclick = function(event) {
+        document.write("I will execute when the event fires");
+      }
+
+      let button2 = document.getElementById("btnD");
+      button2.ondblclick = function(event) {
+        document.write("yeah you have doubled click");
+      }
+    </script>
+  </body>
+</html>
