@@ -10,9 +10,11 @@
   <div id="row"> </div>
   <script>
     for (let i = 0; i < 101; i++) {
-      const div = document.createElement('div');
-      const contentInsideDiv = document.createTextNode("Hi ");
-      document.getElementById('row').appendChild(div.appendChild(contentInsideDiv));
+      var grab = document.getElementById('row');
+      var div = document.createElement('div');
+      var br = document.createElement('br');
+      var contentInsideDiv = document.createTextNode('Hi..! ');
+      some = grab.appendChild(div.appendChild(contentInsideDiv));
     }
   </script>
 </body>
