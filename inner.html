@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> What the hell </title>
+</head>
+
+<body>
+  <div>
+    <span> I am outer div tag</span>
+    <div id="myDiv">
+      This text is an DIV
+      <p> A paragraph in div element </p>
+    </div>
+    End of outer div tag
+  </div>
+  <script>
+    alert(document.getElementById('myDiv').innerText);
+    document.getElementById('myDiv').innerText = "inner div changed!";
+    alert(document.getElementById('myDiv').outerText);
+    document.getElementById('myDiv').outerText = " outer div changed!";
+  </script>
+</body>
+
+</html>
