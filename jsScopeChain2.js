@@ -16,8 +16,9 @@ function f(z) {
     return d;
   }
 
-  return g();
+  return g;
   var e;
 }
 
-console.log(f(1));
+var catchClosure = f(1);
+console.log(catchClosure());
